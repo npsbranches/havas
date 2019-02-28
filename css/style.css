@@ -1,0 +1,392 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'PT Sans', sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+   
+    -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+    outline: none;
+}
+body {
+    /* background: #FFD700; */
+    background-attachment: fixed;
+    padding-bottom: 500px;
+}
+
+a {
+    text-decoration: none;
+   
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * *  */
+
+.wrapper {
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.btn-yellow {
+    background: #FFD700;
+    color: #fff;
+    border-radius: 50px;
+    padding: 0.75em 3em;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * BUTTONS * * * * * * * * * * * * * * * * * * * * * * * * *  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER VARIANT 1* * * * * * * * * * * * * * * * * * * * * * * * *  */
+
+
+.header {
+
+    background: #fff;
+    transition: 0.2s;
+   
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    width: 80vw;
+    margin: auto;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.navbar-top {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f9f9f9;
+    transition: 0.2s;
+}
+
+.logo {
+    transition: 0.2s;
+    height: 100px;
+}
+
+.logo img{
+    transition: 2s;
+    height: 100%;
+}
+
+.header.sticky .logo {
+    height: 60px;
+    transition: 0.2s;
+}
+
+.header.sticky .logo img {
+  
+    transition: 0.2s;
+}
+
+
+.navbar-top ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-top ul li {
+    margin-left: 50px;
+
+}
+
+.navbar-top ul li a {
+    font-size: 14px;
+    color: #000;
+    
+    /* text-transform: uppercase; */
+
+} 
+
+.navbar-top ul li i {
+    font-size: 14px;
+    margin-right: 10px;
+    color: #FFF500;
+    /* color: gray; */
+}
+
+.navbar-bottom {
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar-bottom ul {
+    display: flex;
+}
+
+.navbar-bottom ul li {
+    margin: 0 5px;
+}
+
+.navbar-bottom ul li a {
+    font-size: 16px;
+    color: #000;
+    /* text-transform: uppercase; */
+    /* font-weight: 500; */
+    /* color: #000; */
+    /* letter-spacing: 0.2px; */
+    transition: 0.2s;
+    padding: 10px 15px;
+}
+
+.navbar-bottom ul li a:hover {
+    background: #FFD700;
+ 
+    border-radius: 5px;
+    color: #fff;
+}
+
+
+.header .btn-yellow {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    padding-left: 20px;
+    font-family: 'Uni Sans Heavy CAPS';
+    background: none;
+    color: #333;
+    cursor: pointer;
+
+}
+
+.header .btn-yellow i {
+    font-size: 18px;
+    margin-right: 10px;
+} 
+
+
+.header.sticky .navbar-top {
+    display: none;
+}
+
+.header.sticky {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+
+.header.sticky .navbar-bottom {
+    padding-top: 0;
+}
+
+.header.sticky .header-wrapper {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HEADER VARIANT 1* * * * * * * * * * * * * * * * * * * * * * * * *  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * HERO * * * * * * * * * * * * * * * * * * * * * * * * *  */
+
+.hero {
+    /* height: 640px; */
+    /* background: url('../images/bg.jpg') no-repeat;
+    background-size: cover; */
+    background: #fff;
+}
+
+.hero-wrapper {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    align-items: stretch;
+
+}
+
+.hero-menu {
+
+    height: max-content;
+    width: max-content;
+    /* border: 1px solid #e4e4e4; */
+    min-width: 320px;
+
+    background: #fff;
+}
+
+
+.hero-menu .js-menu ul {
+    /* height: 300px; */
+    height: 550px;
+}
+
+.slinky-theme-default {
+    background: #fff;
+}
+
+.slinky-theme-default a:not(.back) {}
+
+.slinky-theme-default a:last-child {}
+
+.slinky-theme-default a:not(.back):hover {
+    background: #FFF500;
+}
+
+.slinky-theme-default a:not(.back):active {
+    background: #FFF500;
+}
+
+.hero-slider {
+    max-width: 100%;
+
+    overflow: hidden;
+    margin-bottom: 0 !important;
+}
+
+.hero-slider img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.slick-dots {
+    bottom: 30px;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * *  */
+
+.showcase {
+   padding-top: 50px;
+    position: relative;
+    background: #fff;
+}
+
+
+.showcase-bg {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    /* filter: opacity(50%); */
+    opacity: 0.1;
+}
+.showcase h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: #333;
+    font-family: 'Uni Sans Heavy CAPS';
+    position: relative;
+    z-index: 2;
+}
+.showcase h2 span {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: #333;
+    font-family: 'Uni Sans Heavy CAPS';
+    color: #FFF500;
+}
+
+.showcase .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.showcase-card {
+    width: 300px;
+    margin: 30px 15px;
+    position: relative;
+    background: #fff;
+}
+
+.showcase-photo {
+    width: 100%;
+    height: 300px;
+}
+
+.showcase-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.showcase-sale {
+    background: #FFF500;
+    border-radius: 50%;
+    padding: 1em;
+    font-family: 'Uni Sans Heavy CAPS';
+    min-width: 60px;
+    max-width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 22px;
+}
+
+.showcase-info {
+    display: flex;
+    align-items: stretch;
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.showcase-name {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+
+}
+
+.showcase-name h4 {
+    font-family: 'Uni Sans Heavy CAPS';
+}
+
+.showcase-price {
+    background: red;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-family: 'Uni Sans Heavy CAPS';
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * *  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * *  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * *  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * WRAPPERS * * * * * * * * * * * * * * * * * * * * * * * * *  */
+
+@media screen and (max-width: 1366px) {
+
+    .hero-wrapper,
+    .header-wrapper {
+        /* max-width: 1200px; */
+        width: 100%;
+    }
+
+}
