@@ -7,10 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Havas.uz - Скидки на товаров, дискаунтеры в Узбекистане!</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/slinky.min.css">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/fonts.css">
@@ -22,26 +19,46 @@
 
         <div class="header-wrapper">
             <div class="logo">
-                <a href=""><img src="images/logo-min.png" alt=""></a>
+                <a href="catalog.html"><img src="images/logo-min.png" alt=""></a>
             </div>
             <div class="navbar">
                 <div class="navbar-top">
                     <ul>
-                        <li><a href=""><i class="fa fa-user"></i>Обратная связь</a></li>
-                        <li><a href=""><i class="fa fa-phone"></i>+998 97 700 00 00</a></li>
-                        <li><a href=""><i class="fa fa-chevron-down"></i>Язык: Русский</a></li>
+                        <li><a href="">
+                                <div class="round-wrap"><i class="fa fa-user"></i></div>Обратная связь
+                            </a></li>
+                        <li><a href="">
+                                <div class="round-wrap"><i class="fa fa-phone"></i></div>+998 97 700 00 00
+                            </a></li>
+                        <li><a href="">
+                                <div class="round-wrap"><i class="fa fa-chevron-down"></i></div>Язык: Русский
+                            </a></li>
                     </ul>
                 </div>
                 <div class="navbar-bottom">
                     <ul>
                         <li><a href="">Главная</a></li>
-                        <li><a href="">Каталог товаров</a></li>
+                        <li><a href="catalog.html">Каталог товаров</a></li>
                         <li><a href="">Магазины</a></li>
                         <li><a href="">Сотрудничество</a></li>
                         <li><a href="">О Компании</a></li>
                         <li><a href="">Контакты</a></li>
                     </ul>
-                    <button type="button" class="btn-yellow"><i class="fa fa-search"></i>Поиск</button>
+                    <div class="search-overlay"></div>
+                    <div class="scroll-cont">
+                        <div class="content">
+                            <div class="search">
+                                <div class="search__bg"></div>
+                                <form id="searchForm">
+                                    <div class="search__box">
+                                        <input type="text" class="search__input" name="search" placeholder="Поиск" />
+                                        <div class="search__line"></div>
+                                        <div class="search__close"></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -244,9 +261,9 @@
 
     <section class="map">
         <div class="wrapper">
-                <h2>Адреса <br> дискаунтеров</h2>
-                <iframe src="https://yandex.ua/map-widget/v1/-/CCUZJC1Q" width="560" height="400" frameborder="1"
-                    allowfullscreen="true"></iframe>
+            <h2>Адреса <br> дискаунтеров</h2>
+            <iframe src="https://yandex.ua/map-widget/v1/-/CCUZJC1Q" width="560" height="400" frameborder="1"
+                allowfullscreen="true"></iframe>
         </div>
     </section>
 
@@ -266,7 +283,7 @@
             <div class="footer-column">
                 <h3>Покупателям</h3>
                 <ul>
-                    <li><a href="">Каталог товаров</a></li>
+                    <li><a href="catalog.html">Каталог товаров</a></li>
                     <li><a href="">Скачать каталог</a></li>
                     <li><a href="">Вопрос-ответ</a></li>
                 </ul>
@@ -283,7 +300,6 @@
         </div>
     </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/slinky.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
